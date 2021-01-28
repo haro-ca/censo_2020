@@ -16,7 +16,6 @@ tot_pob_entidad <- censo_subset %>%
 
 # Escritura ====
 tot_pob_entidad %>% 
-    summarise(total = sum(pobtot)) %>% 
     write_csv("data/interim/tot_pob_entidad.csv")
 
 
